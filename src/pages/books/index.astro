@@ -1,0 +1,108 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+
+const books = await getCollection("books");
+
+const sortedBooks = books.sort((a, b) => {
+  const statusOrder = {
+    "Reading": 1,
+    "To Read": 2,
+    "Read": 3,
+  };
+
+  const statusA = statusOrder[a.data.status] ?? 99;
+  const statusB = statusOrder[b.data.status] ?? 99;
+
+  if (statusA !== statusB) {
+    return statusA - statusB;
+  }
+  
+  return a.data.title.localeCompare(b.data.title);
+});
+---
+
+<Layout title="Books">
+  <Header activeNav="books" />
+  <main id="main-content" class="app-layout">
+    <section id="books" class="pt-8 pb-6">
+      <h1 class="text-3xl font-bold sm:text-4xl mb-8">Books</h1>
+      <div class="prose max-w-none">
+        <p class="mb-8">
+          This is a curated list of books I have read (or am reading) and found
+          genuinely useful, especially in software engineering, architecture, and
+          professional growth.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 not-prose">
+          {sortedBooks.map(async (book) => {
+            return (
+              <div class="flex flex-row gap-4">
+                {book.data.cover && (
+                  <img
+                    src={typeof book.data.cover === "string" ? book.data.cover : book.data.cover.src}
+                    alt={`${book.data.title} Cover`}
+                    class="w-20 h-auto shadow-md object-cover rounded-md not-prose flex-shrink-0 self-start"
+                  />
+                )}
+
+                <div class="flex flex-col flex-1">
+                  <h2 class="text-xl font-bold mb-2 mt-0 leading-tight">
+                    {book.data.link ? (
+                      <a
+                        href={book.data.link}
+                        target="_blank"
+                        class="hover:underline hover:text-accent decoration-dashed underline-offset-4"
+                      >
+                        {book.data.title}
+                      </a>
+                    ) : (
+                      book.data.title
+                    )}
+                  </h2>
+
+                  <div class="flex flex-col gap-1 text-sm text-foreground/80 mb-2">
+                    <div class="flex items-center gap-2">
+                      <span class="font-semibold text-foreground/60 w-16 shrink-0">Author:</span>
+                      <span>{book.data.author}</span>
+                    </div>
+
+                    <div class="flex items-center gap-2">
+                      <span class="font-semibold text-foreground/60 w-16 shrink-0">Status:</span>
+                      <span
+                        class:list={[
+                          "px-2 py-0.5 rounded-full text-xs font-medium border inline-flex",
+                          book.data.status === "Read" &&
+                            "bg-green-100 text-green-800 border-green-200 dark:bg-green-900/30 dark:text-green-300 dark:border-green-800",
+                          book.data.status === "Reading" &&
+                            "bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-800",
+                          book.data.status === "To Read" &&
+                            "bg-gray-100 text-gray-800 border-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700",
+                        ]}
+                      >
+                        {book.data.status}
+                      </span>
+                    </div>
+
+                    {book.data.rating && (
+                      <div class="flex items-center gap-2">
+                        <span class="font-semibold text-foreground/60 w-16 shrink-0">Rating:</span>
+                        <span class="text-yellow-500 tracking-widest text-base">
+                          {"★".repeat(book.data.rating)}
+                          <span class="text-gray-300">{"★".repeat(5 - book.data.rating)}</span>
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

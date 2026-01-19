@@ -20,7 +20,21 @@ const blog = defineCollection({
       canonicalURL: z.string().optional(),
       hideEditPost: z.boolean().optional(),
       timezone: z.string().optional(),
+    }), 
+});
+
+const books = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/data/books" }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      author: z.string(),
+      status: z.enum(["Reading", "Read", "To Read"]),
+      rating: z.number().min(1).max(5).optional(),
+      cover: z.string().or(image()).optional(),
+      link: z.string().optional(),
+      description: z.string().optional(),
     }),
 });
 
-export const collections = { blog };
+export const collections = { blog, books };

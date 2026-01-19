@@ -23,7 +23,7 @@ My footnotes from the video below
 - A career ladder specifies what level an engineer can attain. Numbers like L1,L2.. titles like Mid, Sr.
 - Promotions usually come with a compensation adjustment. But compensation doesn't have to be tied directly to levels.
 - The senior level is your anchor. Senior is only level that anyone understand.
- ![medior](../../../assets/images/medior.png)
+ ![medior](/images/medior.png)
 
 - [Career Ladder Spreadsheet](https://docs.google.com/spreadsheets/d/1k4sO6pyCl_YYnf0PAXSBcX776rNcTjSOqDxZ5SDty-4/edit?gid=0#gid=0)
 - After you develop the ladder, you have to execute.

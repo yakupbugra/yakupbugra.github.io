@@ -1,23 +1,25 @@
-name: CI
-
-permissions:
-  contents: read
+name: Deploy Astro to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-  workflow_call:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
-  build:
-    name: Code standards & build
+  deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
-
-    strategy:
-      matrix:
-        node-version: [20]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: "☁️ Checkout repository"
@@ -37,11 +39,14 @@ jobs:
       - name: "📦 Install dependencies"
         run: pnpm install
 
-      - name: "🔎 Lint code"
-        run: pnpm run lint
-
-      - name: "📝 Checking code format"
-        run: pnpm run format:check
-
       - name: "🚀 Build the project"
         run: pnpm run build
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        

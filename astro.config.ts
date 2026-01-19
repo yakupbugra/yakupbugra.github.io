@@ -65,7 +65,7 @@ export default defineConfig({
         cssVariable: "--base-font",
         provider: fontProviders.google(),
         fallbacks: ["monospace"],
-        weights: [300, 400, 500, 600, 700],
+        weights: [200,300, 400, 500, 600, 700],
         styles: ["normal", "italic"],
       },
     ],
