@@ -3,7 +3,7 @@ title: "Staff Engineer's Path"
 author: "Tanya Reilly"
 status: "Read"
 rating: 4
-cover: "/images/staff-engineers-path.png"
+cover: "/images/books/staff-engineers-path.png"
 link: "https://www.oreilly.com/library/view/the-staff-engineers/9781098118723/"
 ---
 

@@ -2,7 +2,7 @@
 title: "The Software Engineer's Guidebook"
 author: "Gergely Orosz"
 status: "Read"
-cover: "/images/software-engineers-guidebook.jpg"
+cover: "/images/books/software-engineers-guidebook.jpg"
 rating: 4
 link: "https://www.engguidebook.com/"
 ---

@@ -3,7 +3,7 @@ title: "Software Architecture for Developers"
 author: "Simon Brown"
 status: "Read"
 rating: 5
-cover: "/images/software-architecture-for-developers.png"
+cover: "/images/books/software-architecture-for-developers.png"
 link: "https://leanpub.com/software-architecture-for-developers"
 ---
 
