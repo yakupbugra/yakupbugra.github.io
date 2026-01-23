@@ -1,11 +1,11 @@
 ---
 pubDatetime: 2020-01-18T15:22:00Z
-title: "SOLID Principles (Notes)"
+title: "SOLID (notes)"
 tags:
   - notes
   - architecture
 description:
-    "My notes on studying SOLID principles"
+    "Notes abouy SOLID principles"
 ---
 
 ## Single Responsibility
