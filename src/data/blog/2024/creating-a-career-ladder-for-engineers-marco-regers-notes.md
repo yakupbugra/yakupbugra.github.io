@@ -5,14 +5,10 @@ tags:
   - video
   - career
 description:
-    ""
+    "My footnotes from the video record: Creating a career ladder for engineers - Marco Rogers]"
 ---
 
-My footnotes from the video [Creating a career ladder for engineers - Marco Rogers](https://www.youtube.com/watch?v=jA1Q94d2z10)
-
-<div class="video-container">
-<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+My footnotes from the video record: [Creating a career ladder for engineers - Marco Rogers](https://www.youtube.com/watch?v=jA1Q94d2z10)
 
 - There is no such thing as a "flat" organization.
 - Bringing a career ladder into your organization can help you with hiring and retaining engineers.
