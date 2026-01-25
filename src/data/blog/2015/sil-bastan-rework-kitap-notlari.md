@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2015-03-13T15:22:00Z
+publishTime: 2015-03-13T15:22:00Z
 title: "Sil Baştan (Rework) Kitap Notları"
 tags:
   - books

@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2026-01-19T15:22:00Z
+publishTime: 2026-01-19T15:22:00Z
 title: "DDD Notes -1- Business Domain"
 tags:
   - notes

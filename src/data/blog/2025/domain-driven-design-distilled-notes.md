@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-03-01T15:22:00Z
+publishTime: 2025-03-01T15:22:00Z
 title: "Domain Driven Design Distilled (Notes)"
 tags:
   - DDD

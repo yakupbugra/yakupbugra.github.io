@@ -12,7 +12,7 @@ type Props = {
   description?: string;
   ogImage?: string;
   canonicalURL?: string;
-  pubDatetime?: Date;
+  publishTime?: Date;
   modDatetime?: Date | null;
   scrollSmooth?: boolean;
 };
@@ -24,7 +24,7 @@ const {
   description = SITE.desc,
   ogImage = SITE.ogImage ? `/${SITE.ogImage}` : "/og.png",
   canonicalURL = new URL(Astro.url.pathname, Astro.url),
-  pubDatetime,
+  publishTime,
   modDatetime,
   scrollSmooth = false,
 } = Astro.props;
@@ -36,7 +36,7 @@ const structuredData = {
   "@type": "BlogPosting",
   headline: `${title}`,
   image: `${socialImageURL}`,
-  datePublished: `${pubDatetime?.toISOString()}`,
+  datePublished: `${publishTime?.toISOString()}`,
   ...(modDatetime && { dateModified: modDatetime.toISOString() }),
   author: [
     {
@@ -82,10 +82,10 @@ const structuredData = {
 
     <!-- Article Published/Modified time -->
     {
-      pubDatetime && (
+      publishTime && (
         <meta
           property="article:published_time"
-          content={pubDatetime.toISOString()}
+          content={publishTime.toISOString()}
         />
       )
     }

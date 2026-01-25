@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2024-09-10T15:22:00Z
+publishTime: 2024-09-10T15:22:00Z
 title: "Software Architecture Notes - 1"
 tags:
   - notes

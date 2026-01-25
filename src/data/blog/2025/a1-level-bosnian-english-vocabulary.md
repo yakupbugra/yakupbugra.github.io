@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2025-12-16T15:22:00Z
+publishTime: 2025-12-16T15:22:00Z
 title: "A1 Level Bosnian-English Vocabulary"
 tags:
   - language

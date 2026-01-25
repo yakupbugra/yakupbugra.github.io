@@ -28,7 +28,7 @@ const {
   description,
   ogImage: initOgImage,
   canonicalURL,
-  pubDatetime,
+  publishTime,
   modDatetime,
   timezone,
   tags,
@@ -60,7 +60,7 @@ const layoutProps = {
   title: `${title} | ${SITE.title}`,
   author,
   description,
-  pubDatetime,
+  publishTime,
   modDatetime,
   canonicalURL,
   ogImage,
@@ -97,7 +97,7 @@ const nextPost =
       {title}
     </h1>
     <div class="my-2 flex items-center gap-2">
-      <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
+      <Datetime {publishTime} {modDatetime} {timezone} size="lg" />
       <span
         aria-hidden="true"
         class:list={[

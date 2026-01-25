@@ -11,13 +11,13 @@ dayjs.extend(timezone);
 type Props = {
   class?: string;
   size?: "sm" | "lg";
-  pubDatetime: string | Date;
+  publishTime: string | Date;
   timezone?: string;
   modDatetime?: string | Date | null;
 };
 
 const {
-  pubDatetime,
+  publishTime,
   modDatetime,
   size = "sm",
   class: className = "",
@@ -25,9 +25,9 @@ const {
 } = Astro.props;
 
 /* ========== Formatted Datetime ========== */
-const isModified = modDatetime && modDatetime > pubDatetime;
+const isModified = modDatetime && modDatetime > publishTime;
 
-const datetime = dayjs(isModified ? modDatetime : pubDatetime).tz(
+const datetime = dayjs(isModified ? modDatetime : publishTime).tz(
   postTimezone || SITE.timezone
 );
 

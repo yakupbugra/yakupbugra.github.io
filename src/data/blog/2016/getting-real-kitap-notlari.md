@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2016-02-03T15:22:00Z
+publishTime: 2016-02-03T15:22:00Z
 title: "Getting Real Kitap Notları"
 tags:
   - books
