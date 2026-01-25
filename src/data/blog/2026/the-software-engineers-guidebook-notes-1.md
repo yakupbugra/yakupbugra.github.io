@@ -10,8 +10,6 @@ description:
     "Highlights from The Software Engineer's Guideook (notes). You can find the book detail in my books page."
 ---
 
-
-
 ## Key factors that influence job satisfaction
 
 1. Free time
@@ -22,13 +20,11 @@ description:
 6. Mental and physical health
 7. Flexibility of work hours and location
 8. Ability to disconnect outside of work
----
 
 ## Own your career
 
 - You are responsible for your career.
 - Don’t wait for your manager to step in—take initiative.
----
 
 ## Be known as someone who gets things done
 
@@ -37,13 +33,10 @@ description:
 - Focus on impactful work, not just busy work.
 - Make sure your manager knows what you’ve done and why it matters.
 
----
-
 ## Keep a work log
 
 - Track what you worked on this week, last week, and months ago.
 - This becomes invaluable during performance reviews and promotion discussions.
----
 
 ## Ask for and give feedback
 
@@ -55,7 +48,6 @@ description:
     - Prefer giving constructive feedback in person.
     - Make it clear you are on their side.
     - End the conversation on a positive note.
----
 
 ## Make your manager an ally
 
@@ -63,7 +55,6 @@ description:
 - Understand and support your manager’s goals.
 - Be open, honest, and transparent.
 - Prepare ahead of time for 1:1 meetings.
----
 
 ## Performance reviews
 
@@ -74,7 +65,6 @@ description:
 - Most people receive average reviews; fewer get above or below average.
 - Recent work usually carries more weight.
 - Managers may rate people higher if they feel a stronger connection with them.
----
 
 ## How promotions are decided
 
@@ -85,7 +75,6 @@ description:
 - Be honest with yourself: how was your last performance review?
 - Get your manager on your side.
 - Don’t let promotions and titles define your self-worth.
----
 
 ## Onboarding to a new job
 
