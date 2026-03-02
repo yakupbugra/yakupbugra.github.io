@@ -6,6 +6,7 @@ tags:
   - DDD
 description: "Domain Model, Value Object, Entities, Aggregates, Events, Services"
 ---
+## Domain Model
 
 - A **Domain Model**  is an object model of the domain that incorporates both behavior and data.
 
