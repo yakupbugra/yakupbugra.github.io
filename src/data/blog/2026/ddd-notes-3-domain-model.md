@@ -1,5 +1,5 @@
 ---
-publishTime: 2026-03-02T15:22:00Z
+publishTime: 2026-03-02T10:22:00Z
 title: "Domain Driven Design (notes) -3- Domain Model (Tactical Design)"
 tags:
   - notes
