@@ -1,6 +1,6 @@
 ---
 publishTime: 2026-01-26T15:22:00Z
-title: "Domain Driven Design (notes) -1- Ubiquitous Language and Bounded Context (Strategic Design)"
+title: "Domain Driven Design (notes) -2- Ubiquitous Language and Bounded Context (Strategic Design)"
 tags:
   - notes
   - DDD
